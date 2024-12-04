@@ -10,7 +10,7 @@ The cipher alphabet is the plain alphabet rotated left or right in several posit
 For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right 
 shift of 23 (the shift parameter is used as the key):
 
-Plain 	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z<br>
+Plain   	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z<br>
 Cipher	X	Y	Z	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W<br>
 
 When encrypting, a person looks up each letter of the message in the "plain" line
@@ -23,11 +23,10 @@ Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD,<br>
 
 The encryption can also be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A → 0, B → 1, ..., Z → 25.[2] Encryption of a letter x by a shift n can be described mathematically as,[3]
 
-{\displaystyle E_{n}(x)=(x+n)\mod {26}.}
+## E(x)=(x+n)\mod 26
+
 Decryption is performed similarly,
-
-
-{\displaystyle D_{n}(x)=(x-n)\mod {26}.}
+## D(x)=(x-n)\mod 26
 (Here, "mod" refers to the modulo operation. The value x is in the range 0 to 25, but if x + n or x − n are not in this range then 26 should be added or subtracted.)
 
 The replacement remains the same throughout the message, so the cipher is classed as a type of monoalphabetic substitution, as opposed to polyalphabetic substitution.
